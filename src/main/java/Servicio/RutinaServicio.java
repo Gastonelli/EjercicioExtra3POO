@@ -10,11 +10,11 @@ public class RutinaServicio {
     Scanner leer = new Scanner(System.in);
     
     public void crearRutina(ArrayList<Rutina>listaRutinas){
-        Rutina nueva = new Rutina();
+        Rutina nueva = new Rutina(); // 1. Creamos nueva instancia de Rutina
         Random random = new Random();
-        int id = random.nextInt(9999 - 1000 + 1) + 1000;
+        nueva.setId(random.nextInt(9999 - 1000 + 1) + 1000); // 2. Seteo Id
         System.out.println("Cual es el nombre de la rutina?");
-        nueva.setNombre(leer.nextLine());
+        nueva.setNombre(leer.nextLine()); // 3. Seteo
         System.out.println("Cual es la duración de la rutina?");
         nueva.setDuracion(leer.nextInt());
         leer.nextLine();

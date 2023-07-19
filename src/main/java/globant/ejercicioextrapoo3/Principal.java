@@ -14,8 +14,8 @@ public class Principal {
 
     public static void main(String[] args) {
        
-        ArrayList<Cliente> listaClientes = new ArrayList<Cliente>();
-        ArrayList<Rutina> listaRutinas = new ArrayList<Rutina>();
+        ArrayList<Cliente> listaClientes = new ArrayList<>();
+        ArrayList<Rutina> listaRutinas = new ArrayList<>();
         
         menu(listaClientes, listaRutinas);
         
@@ -39,7 +39,6 @@ public class Principal {
             System.out.println("6. Mostrar Rutinas");
             System.out.println("7. Actualizar rutina");
             System.out.println("8. Eliminar rutina");
-            
             System.out.println("9. Crear lista rapida de clientes");
             System.out.println("10. Crear lista rapida de rutinas");
             System.out.println("0. Salir");
@@ -51,7 +50,6 @@ public class Principal {
                 case 1:
                     cs.crearCliente(listaClientes);
                     break;
-                
                 
                 case 2:
                    cs.mostrarClientes(listaClientes);

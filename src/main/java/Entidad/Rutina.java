@@ -3,12 +3,14 @@ package Entidad;
 
 public class Rutina {
     
+    //Atributos
     private int id;
     private String nombre;
     private int duracion;
     private String nivelDificultad;
     private String descripcion;
 
+    //Constructores
     public Rutina() {
     }
 
@@ -20,6 +22,7 @@ public class Rutina {
         this.descripcion = descripcion;
     }
 
+    //Getter & Setter
     public int getId() {
         return id;
     }
